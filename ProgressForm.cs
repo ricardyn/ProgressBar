@@ -22,68 +22,75 @@
 // (Rights in Technical Data and Computer Software), as applicable.
 #endregion // Header
 
-#region Namespaces
 using System;
 using System.Windows.Forms;
-#endregion // Namespaces
+using System.Drawing;
 
 namespace AdnRme
 {
-  public partial class ProgressForm : Form
-  {
+    public partial class ProgressForm : Form
+    {
         private bool abortFlag;
-        string _format;
+        private Color DEFAULT_INFO_LABEL_COLOR = Color.Green;
+        
+        public string InformationText { get; set; } = "Processing...";
+        
 
-    /// <summary>
-    /// Set up progress bar form and immediately display it modelessly.
-    /// </summary>
-    /// <param name="caption">Form caption</param>
-    /// <param name="format">Progress message string</param>
-    /// <param name="max">Number of elements to process</param>
-    public ProgressForm( string caption, string format, int max )
-    {
-      _format = format;
-      InitializeComponent();
-      Text = caption;
-      label1.Text = (null == format) ? caption : string.Format( format, 0 );
-      progressBar1.Minimum = 0;
-      progressBar1.Maximum = max;
-      progressBar1.Value = 0;
-      Show();
-      Application.DoEvents();
-    }
+        /// <summary>
+        /// Set up progress bar form and immediately display it modelessly.
+        /// </summary>
+        /// <param name="caption">Form caption</param>
+        /// <param name="infoText">Progress message string</param>
+        /// <param name="max">Number of elements to process</param>
+        public ProgressForm(string caption, string infoText, int max)
+        {
+            InformationText = infoText;
+            InitializeComponent();
+            Text = caption;
+            label1.Text = (null == infoText) ? caption : string.Format(infoText, 0);
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = max;
+            progressBar1.Value = 0;
+            Show();
+            Application.DoEvents();
+        }
 
-    public void Increment()
-    {
-      ++progressBar1.Value;
-      if( null != _format )
-      {
-        label1.Text = string.Format( _format, progressBar1.Value );
-      }
-      Application.DoEvents();
-    }
+        public void Increment(Color? statusColor = null)
+        {
+            progressBar1.Value++;
+            
+            if (!string.IsNullOrEmpty(InformationText))
+            {
+                label1.Text = InformationText;
+            }
 
-    public bool getAbortFlag()
-    {
-        return abortFlag;
-    }
+            label1.ForeColor = statusColor?? DEFAULT_INFO_LABEL_COLOR;
+            
+            Application.DoEvents();
+        }
 
-    private void button1_Click(object sender, EventArgs e)
-    {
-        button1.Text = "Aborting...";
-        abortFlag = true;
-    }
+        public bool getAbortFlag()
+        {
+            return abortFlag;
+        }
 
-    protected override bool ProcessDialogKey(Keys keyData)
-    {
-        if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
+        private void button1_Click(object sender, EventArgs e)
         {
             button1.Text = "Aborting...";
             abortFlag = true;
-            return true;
+            this.Close();
         }
-        return base.ProcessDialogKey(keyData);
-    }
+
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
+            {
+                button1.Text = "Aborting...";
+                abortFlag = true;
+                return true;
+            }
+            return base.ProcessDialogKey(keyData);
+        }
 
 #if USE_MARTINS_PROGRESS_FORM
     public void SetText(string text)

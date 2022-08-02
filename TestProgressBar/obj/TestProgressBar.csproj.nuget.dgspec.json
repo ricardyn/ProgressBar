@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\TestProgressBar\\TestProgressBar.csproj": {}
+  },
+  "projects": {
+    "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\ProgressBar.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\ProgressBar.csproj",
+        "projectName": "ProgressBar",
+        "projectPath": "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\ProgressBar.csproj",
+        "frameworks": {
+          "net452": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    },
+    "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\TestProgressBar\\TestProgressBar.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\TestProgressBar\\TestProgressBar.csproj",
+        "projectName": "TestProgressBar",
+        "projectPath": "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\TestProgressBar\\TestProgressBar.csproj",
+        "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
+        "outputPath": "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\TestProgressBar\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ricar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/onBIM/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\ProgressBar.csproj": {
+                "projectPath": "E:\\OneDrive\\onBIM\\myrepos\\ProgressBar\\ProgressBar.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

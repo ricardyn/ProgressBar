@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TestProgressBar/1.0.0": {
+        "dependencies": {
+          "ProgressBar": "1.0.0"
+        },
+        "runtime": {
+          "TestProgressBar.dll": {}
+        }
+      },
+      "ProgressBar/1.0.0": {
+        "runtime": {
+          "ProgressBar.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestProgressBar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProgressBar/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

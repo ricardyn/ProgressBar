@@ -1,0 +1,8 @@
+E:\OneDrive\onBIM\myrepos\ProgressBar\bin\Release\ProgressBar.dll
+E:\OneDrive\onBIM\myrepos\ProgressBar\bin\Release\ProgressBar.pdb
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Release\ProgressBar.csproj.AssemblyReference.cache
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Release\AdnRme.ProgressForm.resources
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Release\ProgressBar.csproj.GenerateResource.cache
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Release\ProgressBar.csproj.CoreCompileInputs.cache
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Release\ProgressBar.dll
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Release\ProgressBar.pdb

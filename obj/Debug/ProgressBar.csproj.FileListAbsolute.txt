@@ -5,3 +5,11 @@ c:\users\deyan nenov\documents\visual studio 2015\Projects\ProgressBar\ProgressB
 c:\users\deyan nenov\documents\visual studio 2015\Projects\ProgressBar\ProgressBar\obj\Debug\ProgressBar.csproj.GenerateResource.Cache
 c:\users\deyan nenov\documents\visual studio 2015\Projects\ProgressBar\ProgressBar\obj\Debug\ProgressBar.dll
 c:\users\deyan nenov\documents\visual studio 2015\Projects\ProgressBar\ProgressBar\obj\Debug\ProgressBar.pdb
+E:\OneDrive\onBIM\myrepos\ProgressBar\bin\Debug\ProgressBar.dll
+E:\OneDrive\onBIM\myrepos\ProgressBar\bin\Debug\ProgressBar.pdb
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Debug\ProgressBar.csproj.AssemblyReference.cache
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Debug\AdnRme.ProgressForm.resources
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Debug\ProgressBar.csproj.GenerateResource.cache
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Debug\ProgressBar.csproj.CoreCompileInputs.cache
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Debug\ProgressBar.dll
+E:\OneDrive\onBIM\myrepos\ProgressBar\obj\Debug\ProgressBar.pdb
